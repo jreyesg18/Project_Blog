@@ -1,0 +1,18 @@
+
+<main class="form-signin">
+
+  <%if @users.count == 0 %>
+    <h1>No se encontro usuarios</h1>
+  <%else%>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="col-8 text-left">
+            <h1>Usuario <%= link_to user.username, user_path(user) %></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  <%end%>
+</main>

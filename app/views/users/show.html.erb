@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+
+    <% if @user.image_url %>
+      <div class="col-4">
+        <%= image_tag @user.image_url, width: "200px", class: "profile-pic" %>
+      </div>
+    <% end %>
+
+    <div class="col-md-8">
+      <div class="col-8 text-left">
+
+        <h1><strong><%=@user.username %></strong></h1>
+            <h5><strong> <%= @user.full_name %></strong></h5>
+
+            <h5><strong>descripcion: </strong><%= @user.description%>
+            <h5><strong>website: </strong> <%= @user.website %></h5>
+            <h5><strong>Contacto: </strong><%= @user.email_com%>
+            <h5><strong>Posts: </strong><%= @user.posts.count%><br>
+              <br><br>
+      <%= link_to 'Editar Usuario', edit_user_path(@user), class: 'btn btn-success' %>
+      <%= link_to "volver", root_path, class: 'btn btn-success' %></div>
+  </div>
+
+  <div class="row profile-posts">
+      <% @posts.each do |post| %>
+          <%= image_tag post.image.url, class: "post_image" %>
+      <% end%>
+  </div>
+</div>
+</div>

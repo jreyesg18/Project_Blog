@@ -1,0 +1,18 @@
+<h2>Nuevo</h2>
+
+<main class="form-signin">
+  <%= simple_form_for @post, :html => {:multipart =>true } do |f| %>
+
+    <%= f.label :Imagen %>
+
+    <%= f.file_field :image,  class:"form-control" %>
+    <%= f.hidden_field :image_cache %> <br>
+
+    <%= f.label :Description %>
+    <%= f.text_area :description,class: "form-control" %>
+
+    <%= f.button :submit,"Boton", class: 'btn btn-success'%>
+
+<% end %>
+
+</main>

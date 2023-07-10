@@ -1,0 +1,36 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background: #fafafa !important;
+}
+
+.profile-pic {
+  border-radius: 50% !important;
+}
+
+.profile-posts {
+  margin-top: 50px;
+}
+
+.post_image {
+  height: 350px;
+  width: 250px;
+}
+
+.profile-stas{
+  width: 120px;
+  float: left;
+}
+
+.follower-suggestions {
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border:1px solid #999;
+}
+
+.img-show {
+  height: 670px;
+  width: 500px;
+}

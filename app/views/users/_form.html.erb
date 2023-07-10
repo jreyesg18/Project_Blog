@@ -1,0 +1,21 @@
+<main class="form-signin">
+
+<%= simple_form_for @user, :html => {:multipart =>true } do |f| %>
+
+  <%= f.input :description, label: "Descripcion"%>
+  <%= f.input :username, label: "username"%>
+  <%= f.input :name, label: "Nombres"%>
+  <%= f.input :lastname, label: "Apellidos Paterno y Materno"%>
+  <h5><%= @user.email_com %></h5>
+  <%= f.input :website, label: "website"%>
+
+
+  <%= f.label :image %>
+  <%= f.file_field :image,  class:"form-control" %>
+  <%= f.hidden_field :image_cache %>
+
+  <h2> <%= f.button :submit,"Modificar datos"%></h2>
+
+
+<% end %>
+</main>

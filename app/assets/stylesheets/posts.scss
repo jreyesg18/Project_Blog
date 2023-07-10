@@ -1,0 +1,44 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.post_image {
+  height: 350px;
+  width: 250px;
+}
+
+.insta-post{
+  margin-bottom: 15px;
+}
+
+.post-meta{
+  background: #fff;
+  text-align: left;
+  font-weigh: bold;
+  padding: 20px;
+  border:1px solid #999;
+
+}
+
+.post-details{
+  background: #fff;
+  paddind: 15px;
+  border: 1px solid #ddd;
+
+  width: 500px;
+}
+
+.img{
+  margin-right: 10px;
+}
+
+.post-show {
+  height: 670px;
+  width: 500px;
+}
+
+.postt {
+  height: 350px;
+  width: 250px;
+  margin-bottom: 40px;
+}
